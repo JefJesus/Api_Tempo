@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="prev-time">
+        <h1>Consulta a API Tempo</h1>
+        <div class="select-city">
+            <label>Selecione uma cidade: </label>
+            <select id="selCidade">
+                <option value="Volta Redonda">Volta Redonda</option>
+                <option value="São Paulo" selected>São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+            </select>
+        </div>
+        
+        <div class="position-button">
+            <button id="btnConsultar">Consultar Previsão do tempo</button>
+        </div>
+            
+        <div class="align-center">
+            <img src="" id="imgTempo">
+            <p id="pTemp"></p>
+        </div>
+    </div>
+    
+
+    <script src="./js/script.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 200 & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* position: relative; */
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url('../assets/england.jpg') no-repeat center -150px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    color: #fafafa;
+}
+
+.prev-time {
+    
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    z-index: 0;
+}
+
+.prev-time::before {
+    position: absolute; 
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    width: 30%;
+    height: 230px;
+    z-index: -1;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 6px;
+}
+
+.prev-time h1 {
+
+    text-align: center;
+}
+
+.prev-time .select-city {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    align-items: baseline;
+}
+
+.prev-time .select-city label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.prev-time .select-city select {
+    padding: 0.3rem;
+    outline: none;
+    opacity: 90%;
+    border-radius: 5px;
+
+}
+
+.prev-time .position-button {
+    text-align: center;
+}
+
+.prev-time .position-button button {
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.prev-time button:hover {
+    background: rgb(129, 127, 123);
+}
+
+.align-center {
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
